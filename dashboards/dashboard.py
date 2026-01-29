@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import json
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent  # volta da pasta dashboards/ para a raiz
+DATA_DIR = BASE_DIR / "data"
 
 st.set_page_config(
     page_title="Dashboard Socioeconômico MG",
@@ -11,12 +16,12 @@ st.set_page_config(
 st.title("Análise Socioeconômica e Predição do IDH")
 st.markdown("Este dashboard apresenta os **resultados finais** do modelo de Machine Learning desenvolvido para avaliar e prever o **IDH das Regiões Integradas de Segurança Pública (RISP)**.")
 
-dfPredict = pd.read_csv('\Desafio2\Modelo-Preditivo-Socioecon-mico\data\predict.csv', sep = ";")
-dfLofo = pd.read_csv('\Desafio2\Modelo-Preditivo-Socioecon-mico\data\importance_lofo.csv', sep = ";")
-dfPremut = pd.read_csv('\Desafio2\Modelo-Preditivo-Socioecon-mico\data\importnce_permut.csv', sep = ";")
-dfImportance = pd.read_csv('\Desafio2\Modelo-Preditivo-Socioecon-mico\data\dataset_importance.csv', sep = ";")
+dfPredict = pd.read_csv(DATA_DIR, sep = ";")
+dfLofo = pd.read_csv(DATA_DIR, sep = ";")
+dfPremut = pd.read_csv(DATA_DIR, sep = ";")
+dfImportance = pd.read_csv(DATA_DIR, sep = ";")
 
-with open('\Desafio2\Modelo-Preditivo-Socioecon-mico\data\metrics.json') as f:
+with open(DATA_DIR) as f:
     metrics = json.load(f)
 
 
