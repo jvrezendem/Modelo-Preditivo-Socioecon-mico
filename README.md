@@ -132,7 +132,7 @@ Foi adotada a **validação cruzada K-Fold (K=5)** por:
 A validação Cruzada (Cross Validation) realiza a divisão dos daddos de treino e test multiplas vezes, garantindo que todo o conjunto de dados seja usado para treinamento e teste em momentos diferentes.
 O método K-Fold separa o conjunto de dados em *k* subconjuntos (os folds). Os dados são divididos em *k* partes iguais e o modelo é treinado *k* vezes.
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\previsoes.png)
+![](assets\previsoes.png)
 
 
 ---
@@ -184,7 +184,7 @@ Em cada fold:
 - O erro foi avaliado
 - As previsões foram armazenadas para análise comparativa
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\previsoes_CV.png)
+![](assets\previsoes_CV.png)
 
 ---
 
@@ -196,7 +196,7 @@ O hiperparâmetro **α** controla o peso da regularização em relação ao erro
 
 A escolha do alpha foi baseada no **menor erro médio (MAE)** obtido via validação cruzada. Os valores de alpha testado foram [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 3.0, 4.0]
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\erro_p_alpha.png)
+![](assets\erro_p_alpha.png)
 
 ---
 
@@ -218,7 +218,7 @@ O método Leave-One-Feature-Out (LOFO) é uma técnica de avaliação de import�
 | 3 | esperança_vida             |  0.004035 |
 | 2 | taxa_de_analfabetismo(%)   |  0.011306 |
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\imapacto_lofo.png)
+![](assets\imapacto_lofo.png)
 
 ### Importância por Permutação
 O método de importância por permutação avalia a relevância das variáveis ao medir o quanto o desempenho do modelo piora quando os valores de uma feature são embaralhados aleatoriamente. Ao permutar uma variável, sua relação com a variável alvo é quebrada, mantendo as demais intactas; se isso causar uma queda significativa na performance do modelo, entende-se que essa feature é importante. Esse método é amplamente utilizado por ser simples, intuitivo e aplicável a diferentes tipos de modelos, além de refletir diretamente o impacto de cada variável nas previsões.
@@ -234,7 +234,7 @@ O método de importância por permutação avalia a relevância das variáveis a
 | 3 | esperança_vida             | 0.006077 |
 | 1 | renda_media                | 0.007051 |
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\imapacto_permut.png)
+![](assets\imapacto_permut.png)
 
 A combinação dos métodos Leave-One-Feature-Out e importância por permutação, por meio da média da diferença de erro observada em ambos, permite obter uma avaliação mais robusta e confiável da importância das variáveis, reduzindo vieses associados a um único critério de análise. Enquanto o LOFO mede o impacto estrutural da remoção completa de uma feature do modelo, a permutação avalia a sensibilidade do desempenho ao romper a relação estatística dessa variável com o alvo.
 
@@ -249,7 +249,7 @@ A combinação dos métodos Leave-One-Feature-Out e importância por permutaçã
 | 0 | total_crimes             | 0.000785 | 0.000083 | 0.000434 |
 | 6 | crimes_educ              | -0.002297 | 0.000415 | -0.000941 |
 
-![](\Desafio2\Modelo-Preditivo-Socioecon-mico\assets\importancia_fator.png)
+![](assets\importancia_fator.png)
 
 ---
 
