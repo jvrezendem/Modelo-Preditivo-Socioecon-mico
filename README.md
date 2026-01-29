@@ -42,7 +42,7 @@ Os dados utilizados neste projeto foram coletados a partir de fontes públicas e
 
 Todo o processo de coleta está documentado no repositório:
 
-🔗 **https://github.com/jvrezendem/analise_socioeconomica_mg**
+ **https://github.com/jvrezendem/analise_socioeconomica_mg**
 
 
 
@@ -256,7 +256,10 @@ A combinação dos métodos Leave-One-Feature-Out e importância por permutaçã
 
 Foi criado um dashboard que sintetiza todas as informações obtidas nessa análise. Para a criação foi utilizado o StreamLit.
 
-Link do dashboard: https://jvrezendem-modelo-preditivo-socioeco-dashboardsdashboard-9zrl3q.streamlit.app/
+Link do dashboard: 
+
+**https://jvrezendem-modelo-preditivo-socioeco-dashboardsdashboard-9zrl3q.streamlit.app/**
+
 ---
 
 ## Conclusão
