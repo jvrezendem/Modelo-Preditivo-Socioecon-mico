@@ -1,6 +1,8 @@
 {
     "modelo": "Ridge Regressor",
     "cross_validation": "KFold(n_splits=5)",
+    "R2_splitFixo": 0.9604623283484326,
+    "MAE_splitFixo": 0.004335742416911796,
     "R2_mean": 0.9587412990974438,
     "R2_std": 0.02519013058209709,
     "MAE_mean": 0.006008375270993362,
