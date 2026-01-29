@@ -218,7 +218,7 @@ O método Leave-One-Feature-Out (LOFO) é uma técnica de avaliação de import�
 | 3 | esperança_vida             |  0.004035 |
 | 2 | taxa_de_analfabetismo(%)   |  0.011306 |
 
-![](assets/imapacto_lofo.png)
+![](assets/impacto_lofo.png)
 
 ### Importância por Permutação
 O método de importância por permutação avalia a relevância das variáveis ao medir o quanto o desempenho do modelo piora quando os valores de uma feature são embaralhados aleatoriamente. Ao permutar uma variável, sua relação com a variável alvo é quebrada, mantendo as demais intactas; se isso causar uma queda significativa na performance do modelo, entende-se que essa feature é importante. Esse método é amplamente utilizado por ser simples, intuitivo e aplicável a diferentes tipos de modelos, além de refletir diretamente o impacto de cada variável nas previsões.
@@ -234,7 +234,7 @@ O método de importância por permutação avalia a relevância das variáveis a
 | 3 | esperança_vida             | 0.006077 |
 | 1 | renda_media                | 0.007051 |
 
-![](assets/imapacto_permut.png)
+![](assets/impacto_permut.png)
 
 A combinação dos métodos Leave-One-Feature-Out e importância por permutação, por meio da média da diferença de erro observada em ambos, permite obter uma avaliação mais robusta e confiável da importância das variáveis, reduzindo vieses associados a um único critério de análise. Enquanto o LOFO mede o impacto estrutural da remoção completa de uma feature do modelo, a permutação avalia a sensibilidade do desempenho ao romper a relação estatística dessa variável com o alvo.
 
@@ -251,6 +251,12 @@ A combinação dos métodos Leave-One-Feature-Out e importância por permutaçã
 
 ![](assets/importancia_fator.png)
 
+
+## DashBoard
+
+Foi criado um dashboard que sintetiza todas as informações obtidas nessa análise. Para a criação foi utilizado o StreamLit.
+
+Link do dashboard: https://jvrezendem-modelo-preditivo-socioeco-dashboardsdashboard-9zrl3q.streamlit.app/
 ---
 
 ## Conclusão
@@ -264,4 +270,5 @@ Em seguida, os fatores relacionados **à saúde, representados pela esperança d
 Esses achados sugerem que, no contexto analisado, **políticas públicas voltadas à educação possuem potencial impacto estrutural mais profundo sobre o desenvolvimento humano**, sendo complementadas de forma relevante por ações na área da saúde e da distribuição de renda. Ressalta-se, entretanto, que os resultados refletem associações estatísticas aprendidas pelo modelo, não implicando necessariamente relações de causalidade direta. 
 
 Complementando essa conclusão, os resultados obtidos indicam que políticas públicas orientadas ao **fortalecimento da educação básica**, com foco na ampliação da qualidade do ensino e na redução das taxas de analfabetismo, tendem a produzir impactos estruturais significativos sobre o desenvolvimento humano. Adicionalmente, **o redirecionamento e a ampliação de investimentos no sistema público de saúde (SUS)** mostram-se fundamentais para garantir maior eficiência no atendimento à população, reduzindo a sobrecarga dos serviços e contribuindo para o aumento da expectativa de vida. Por fim, **reformas tributárias que ampliem o poder de compra da população**, especialmente das camadas de menor renda, podem atuar como mecanismo complementar de promoção do bem-estar social, ao estimular o consumo, reduzir desigualdades e fortalecer a capacidade econômica regional. Em conjunto, essas medidas evidenciam a necessidade de políticas públicas integradas, capazes de atuar simultaneamente sobre educação, saúde e renda, de modo a potencializar os efeitos positivos observados nos indicadores de desenvolvimento humano.
+
 
